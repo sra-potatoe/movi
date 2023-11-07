@@ -44,42 +44,42 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyB9vkw6P3iSYQ_Td3NMfLenNNiK4eO0v1Q',
-    appId: '1:963892597032:web:ee03ce3a49d030584d801d',
-    messagingSenderId: '963892597032',
-    projectId: 'movil-2-db4ad',
-    authDomain: 'movil-2-db4ad.firebaseapp.com',
-    databaseURL: 'https://movil-2-db4ad-default-rtdb.firebaseio.com',
-    storageBucket: 'movil-2-db4ad.appspot.com',
-    measurementId: 'G-MFC6BGEWTJ',
+    apiKey: 'AIzaSyCoC0K7qGLi2g3drg4LuML6jf2KZRpqR2U',
+    appId: '1:372955814414:web:01a508b52420814d6f3a5f',
+    messagingSenderId: '372955814414',
+    projectId: 'login-56f35',
+    authDomain: 'login-56f35.firebaseapp.com',
+    storageBucket: 'login-56f35.appspot.com',
+    measurementId: 'G-SZFMCWZFK6',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyALEICMRGnD-jaUZkIWjw9rJKW09sxQwHQ',
-    appId: '1:963892597032:android:948f2867587366484d801d',
-    messagingSenderId: '963892597032',
-    projectId: 'movil-2-db4ad',
-    databaseURL: 'https://movil-2-db4ad-default-rtdb.firebaseio.com',
-    storageBucket: 'movil-2-db4ad.appspot.com',
+    apiKey: 'AIzaSyAmI1QIKBbm_8g8qrZ-RKd_egZ5qxcB6Kc',
+    appId: '1:372955814414:android:f01ed79ec770b2d16f3a5f',
+    messagingSenderId: '372955814414',
+    projectId: 'login-56f35',
+    storageBucket: 'login-56f35.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCccw55k1alu8_ubmGqr5jhMG2RR3Em3DY',
-    appId: '1:963892597032:ios:862aac20e32c50a24d801d',
-    messagingSenderId: '963892597032',
-    projectId: 'movil-2-db4ad',
-    databaseURL: 'https://movil-2-db4ad-default-rtdb.firebaseio.com',
-    storageBucket: 'movil-2-db4ad.appspot.com',
+    apiKey: 'AIzaSyBYjDyAI6mmtY8mi3MxEztb7JmGk4SslTs',
+    appId: '1:372955814414:ios:2c86193b36b2aaea6f3a5f',
+    messagingSenderId: '372955814414',
+    projectId: 'login-56f35',
+    storageBucket: 'login-56f35.appspot.com',
+    androidClientId: '372955814414-4pbl3upijo4eff6kkh0fq43vhqr8krpc.apps.googleusercontent.com',
+    iosClientId: '372955814414-jic6v6lt0f173c18570pca6ghjfk494m.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterEx',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCccw55k1alu8_ubmGqr5jhMG2RR3Em3DY',
-    appId: '1:963892597032:ios:95af52666973136f4d801d',
-    messagingSenderId: '963892597032',
-    projectId: 'movil-2-db4ad',
-    databaseURL: 'https://movil-2-db4ad-default-rtdb.firebaseio.com',
-    storageBucket: 'movil-2-db4ad.appspot.com',
+    apiKey: 'AIzaSyBYjDyAI6mmtY8mi3MxEztb7JmGk4SslTs',
+    appId: '1:372955814414:ios:ef3aa203aa0286b06f3a5f',
+    messagingSenderId: '372955814414',
+    projectId: 'login-56f35',
+    storageBucket: 'login-56f35.appspot.com',
+    androidClientId: '372955814414-4pbl3upijo4eff6kkh0fq43vhqr8krpc.apps.googleusercontent.com',
+    iosClientId: '372955814414-p6ic02jd80f1g8e8nkmvkk3urb6e42ul.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterEx.RunnerTests',
   );
 }
