@@ -101,8 +101,7 @@ class _MyMapState extends State<MyMap> {
                 child: SetFavoriteLocationScreen(
                   favoriteLocationBloc: FavoriteLocationBloc(uid: uid),
                   latitud: _currentLocation?.latitude ?? 0.0,
-                  longitud: _currentLocation?.longitude ?? 0.0, 
-                  uid: uid ?? '', // Pasar el uid al SetFavoriteLocationScreen
+                  longitud: _currentLocation?.longitude ?? 0.0,  // Pasar el uid al SetFavoriteLocationScreen
                 ),
               ),
             ),
