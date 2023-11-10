@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "963892597032",
+    "firebase_url": "https://movil-2-db4ad-default-rtdb.firebaseio.com",
+    "project_id": "movil-2-db4ad",
+    "storage_bucket": "movil-2-db4ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963892597032:android:948f2867587366484d801d",
+        "android_client_info": {
+          "package_name": "com.example.flutter_ex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALEICMRGnD-jaUZkIWjw9rJKW09sxQwHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
