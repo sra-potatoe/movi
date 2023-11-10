@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ex/screens/map/map.dart';
+import 'package:flutter_ex/screens/nuevo.dart';
 import 'contacts_screen.dart';
 import 'add_contacts_screen.dart';
 import 'add_personal_data_screen.dart';
@@ -16,6 +17,7 @@ class _MainScreenState extends State<MainScreen> {
     ContactsScreen(),
     AddContactsScreen(),
     MyMap(),
+    NewScreen(),
     AddPersonalDataScreen(),
   ];
 
@@ -54,6 +56,10 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Añadir Mis Datos',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Mapa',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),

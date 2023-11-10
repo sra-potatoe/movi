@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_ex/screens/map/useredit.dart';
 
 class AddPersonalDataScreen extends StatelessWidget {
   final CollectionReference misDatosCollection =
@@ -106,6 +107,17 @@ class AddPersonalDataScreen extends StatelessWidget {
                 _addMisDatos(context);
               },
               child: Text('Guardar Datos Personales'),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.pink),
+              ),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => UserData()));
+              },
+              child: Text('Ver Dato personales'),
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(Colors.pink),
               ),

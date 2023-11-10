@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_ex/screens/map/BLoC/FavoriteLocationBloc.dart';
 import 'package:flutter_ex/screens/map/BLoC/SetFavoriteLocationScreen.dart';
+import 'package:flutter_ex/screens/map/BLoC/dataMap.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:location/location.dart';
@@ -44,17 +45,20 @@ class _MyMapState extends State<MyMap> {
   Future<void> _saveLocation() async {
     getCurrentUser();
     if (uid != null) {
-      await _firestore.collection('usuarios').doc(uid).update({
-        'ubicacionFavorita': {
+      await _firestore
+          .collection('usuarios')
+          .doc(uid)
+          .collection('ubicacionFavorita')
+          .add({
+        'ubicacion': {
           'latitud': _currentLocation?.latitude,
           'longitud': _currentLocation?.longitude,
         },
       });
-      print(_currentLocation?.latitude);
+      print(_firestore.collection('ubicacionFavorita'));
       print(_currentLocation?.longitude);
     }
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -92,24 +96,12 @@ class _MyMapState extends State<MyMap> {
             ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => DateMap()));
           _saveLocation();
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-              builder: (context) => BlocProvider(
-                create: (context) => FavoriteLocationBloc(uid: uid),
-                child: SetFavoriteLocationScreen(
-                  favoriteLocationBloc: FavoriteLocationBloc(uid: uid),
-                  latitud: _currentLocation?.latitude ?? 0.0,
-                  longitud: _currentLocation?.longitude ?? 0.0,  // Pasar el uid al SetFavoriteLocationScreen
-                ),
-              ),
-            ),
-          );
         },
         child: Icon(Icons.save),
       ),
-
     );
   }
 }
